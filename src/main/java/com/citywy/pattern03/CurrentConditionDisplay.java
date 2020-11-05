@@ -4,7 +4,7 @@ package com.citywy.pattern03;
  * @author zhouhai
  * @date 2020/11/4 16:12
  * @company bbaqw
- * 实现观察者接口、布告板展示接口
+ * （布告板）实现观察者接口、布告板展示接口
  */
 public class CurrentConditionDisplay implements Observer,DisplayElement{
     private float temperature;
