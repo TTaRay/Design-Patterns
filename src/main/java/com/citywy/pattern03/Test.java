@@ -1,5 +1,8 @@
 package com.citywy.pattern03;
 
+import com.citywy.pattern03.CurrentConditionDisplay;
+import com.citywy.pattern03.WeatherData;
+
 /**
  * @author zhouhai
  * @date 2020/11/4 17:08
@@ -7,7 +10,7 @@ package com.citywy.pattern03;
  */
 public class Test {
     public static void main(String[] args) {
-        WeatherData weatherData = new WeatherData();
+        com.citywy.pattern03.WeatherData weatherData = new WeatherData();
         //一个新的布告板
         CurrentConditionDisplay ccd=new CurrentConditionDisplay(weatherData);
         //新的气象测量

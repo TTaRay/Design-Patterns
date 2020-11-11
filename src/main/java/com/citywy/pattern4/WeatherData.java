@@ -13,12 +13,13 @@ public class WeatherData extends Observable {
     private float humidity;
     private float pressure;
 
+    //数据改变更新观察者数据值,setChanged和notifyObservers
     public void measurementsChanged(){
         setChanged();
         notifyObservers();
     }
 
-    //设置气象站检测到的温度 湿度 气压并更新
+    //设置气象站检测到的温度 湿度 气压并更新(添加、修改...)
     public void setMeasurements(float temperature,float humidity,float pressure){
         this.temperature=temperature;
         this.humidity=humidity;
